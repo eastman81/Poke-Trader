@@ -1,0 +1,64 @@
+/* Display.css */
+.pokemon-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 6px;
+}
+
+.pokemon-table th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 2px solid black !important;
+}
+
+.pokemon-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  border: 1px solid black !important;
+}
+
+.pokemon-table-container {
+  overflow-x: auto;
+}
+
+/* Override Bootstrap's striped table styling */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #ff9696 !important;
+}
+
+.summary-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.summary-item:first-child {
+  border: 2px solid #ff9800;
+}
+
+.summary-item:last-child {
+  border: 2px solid #4caf50;
+}
+
+.summary-label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.summary-value {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #212529;
+}

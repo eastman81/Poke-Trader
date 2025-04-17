@@ -1,0 +1,22 @@
+/* DisplayRow.css */
+.pokemon-row td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pokemon-row .pokemon-name-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pokemon-row .pokemon-sprite {
+  width: 50px;
+  margin-right: 10px;
+}
+
+tr.pokemon-row:hover,
+tr.pokemon-row:hover td {
+  background-color: #b4e4fa !important;
+  transition: background-color 0.2s ease;
+}

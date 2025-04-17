@@ -1,5 +1,23 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  padding: 1px 0px;
+  position: relative;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url('./assets/images/seamless-pattern-pokeball.avif'); */
+  background-image: url('./assets/images/pokeball-background-bw.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: .5;
+  z-index: 0;
 }
 
 .App-logo {
@@ -35,4 +53,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-content {
+  position: relative;
+  z-index: 1;
+}
+
+.collection-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.collection-list .card {
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+  margin-top: .5rem;
+}
+
+.collection-list .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.collection-list .card-title {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.collection-list .card-text {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.collection-list .btn {
+  min-width: 150px;
+  margin-left: 15px;
+  white-space: nowrap;
 }
